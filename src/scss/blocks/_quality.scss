@@ -1,0 +1,105 @@
+.quality {
+    min-height: 1100px;
+    background-color: $mainBackground;
+    padding-top: 120px;
+    position: relative;
+    &__title {
+        font-family: EBGaramond;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__devider {
+        margin: 20px auto 0 auto;
+    }
+    &__box {
+        margin: 35px auto 0 auto;
+
+        display: grid;
+        grid-template-columns: 545px 560px;
+        justify-content: space-between;
+    }
+    &__img {
+        z-index: 15;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__p {
+        margin-bottom: 33px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+    &__advantages_blocks {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__advantages {
+        &_block {   
+            display: flex;
+            align-items: center;
+        }
+        &_more {
+            margin-left: -10px;
+            font-weight: 400;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            transform: rotate(-90deg);
+        }
+        &_number {
+            margin-left: -10px;
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 53px;
+            text-transform: uppercase;
+            color: #E1DECE;
+        }
+        &_descr {
+            margin-left: 3px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+    &__signature {
+        &_box {
+            margin-top: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        &_name {
+            font-family: 'Segoe Script';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 25px;
+            text-transform: capitalize;
+            color: #E1DECE;
+        }
+        &_img {
+            margin-left: 48px;
+        }
+    }
+    &__btn_box {
+        margin: 105px auto 0 auto;
+    }
+    &__decor {
+        z-index: 5;
+        font-weight: 900;
+        font-size: 90px;
+        line-height: 105px;
+        @include decor_text;
+        position: absolute;
+        left: -22px;
+        bottom: 52px;
+    }
+}

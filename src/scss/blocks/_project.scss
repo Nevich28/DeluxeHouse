@@ -1,6 +1,6 @@
 .project {
     min-height: 2250px;
-    width: 100vw;
+    //width: 100vw;
     background-color: $mainBackground;
     padding-top: 90px;
     position: relative;
@@ -15,10 +15,7 @@
         color: $mainFonts;
     }
     &__devider {
-        height: 1px;
-        width: 100%;
         margin: 23px auto 0 auto;
-        background-color: $mainFonts;
     }
     &__box {
         position: relative;
@@ -76,31 +73,6 @@
         bottom: 250px;
     }
     &__btn_box {
-        z-index: 20;
         margin: 80px auto 0 auto;
-        width: 515px;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__btn {
-        width: 220px;
-        height: 62px;
-        border: 1px solid #E1DECE;
-        border-radius: 5px;
-        background-color: $mainBackground;
-        font-family: EBGaramond;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 16px;
-        color: $mainFonts;
-        &:hover {
-            background-color: $mainFonts;
-            color: $mainBackground;
-        }
-        &:active {
-            color: $mainBackground;
-            background-color: $mainFonts;
-            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
     }
 }

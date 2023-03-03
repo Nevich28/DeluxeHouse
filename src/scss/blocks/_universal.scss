@@ -1,0 +1,33 @@
+.devider {
+    height: 1px;
+    width: 100%;
+    background-color: $mainFonts;
+}
+.btn_box {
+    z-index: 20;
+    width: 515px;
+    display: flex;
+    justify-content: space-between;
+    &_btn {
+        width: 220px;
+        height: 62px;
+        border: 1px solid #E1DECE;
+        border-radius: 5px;
+        background-color: $mainBackground;
+        font-family: EBGaramond;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: $mainFonts;
+        transition: 0.2s all;
+        &:hover {
+            background-color: $mainFonts;
+            color: $mainBackground;
+        }
+        &:active {
+            color: $mainBackground;
+            background-color: $mainFonts;
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
