@@ -1,0 +1,23 @@
+//Оставить в заготовке обязательно
+@import 'fonts'; 
+@import 'variables/variables';
+@import 'variables/mixins';
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //font-display: swap;
+    font-family: Roboto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+
+
+@import 'blocks/header';
+@import 'blocks/design';
+@import 'blocks/project';
+@import 'blocks/media';

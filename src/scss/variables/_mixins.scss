@@ -1,0 +1,5 @@
+@mixin decor_text {
+    background: linear-gradient(126.33deg, rgba(85, 80, 80, 0.45) -43.79%, rgba(222, 211, 109, 0) 52.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

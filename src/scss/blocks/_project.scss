@@ -1,0 +1,106 @@
+.project {
+    min-height: 2250px;
+    width: 100vw;
+    background-color: $mainBackground;
+    padding-top: 90px;
+    position: relative;
+    overflow: hidden;
+
+    &__title {
+        font-family: EBGaramond;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 45px;
+        text-align: center;
+        color: $mainFonts;
+    }
+    &__devider {
+        height: 1px;
+        width: 100%;
+        margin: 23px auto 0 auto;
+        background-color: $mainFonts;
+    }
+    &__box {
+        position: relative;
+        display: block;
+        margin: auto;
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(3, 370px);
+        grid-template-rows: repeat(4, 450px);
+        grid-auto-rows: 450px;
+        column-gap: 30px;
+        row-gap: 35px;
+        justify-content: center;
+        &_title {
+            margin-top: 26px;
+            font-family: EBGaramond;
+            font-weight: 700;
+            font-size: 16px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        &_subtitle {
+            margin-top: 7px;
+            font-family: EBGaramond;
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+    &__img {
+        position: relative;
+        z-index: 15;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    &__decor {
+        position: relative;
+        z-index: 5;
+        font-weight: 900;
+        font-size: 90px;
+        line-height: 105px;
+        @include decor_text;
+    }
+    .pos1 {
+        position: absolute;
+        left: -59px;
+        top: 791px;
+        z-index: 5;
+    }
+    .pos2 {
+        position: absolute;
+        right: -180px;
+        bottom: 250px;
+    }
+    &__btn_box {
+        z-index: 20;
+        margin: 80px auto 0 auto;
+        width: 515px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__btn {
+        width: 220px;
+        height: 62px;
+        border: 1px solid #E1DECE;
+        border-radius: 5px;
+        background-color: $mainBackground;
+        font-family: EBGaramond;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: $mainFonts;
+        &:hover {
+            background-color: $mainFonts;
+            color: $mainBackground;
+        }
+        &:active {
+            color: $mainBackground;
+            background-color: $mainFonts;
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
