@@ -1,0 +1,21 @@
+.useful {
+    margin-top: -370px;
+    height: 2420px;
+    width: 100%;
+    overflow: hidden;
+    //position: relative;
+    &__cut {
+        overflow: hidden;
+        width: 200%;
+        height: 1940px;
+        transform: skew(0, -17deg);
+    }
+    &__back {
+        margin-top: -300px;
+        transform: skew(0, 17deg);
+        width: 50%;
+        height: 2500px;
+        background: url('../img/useful/back.jpg') center (center/cover) no-repeat;
+        //padding-top: 380px;
+    }
+}

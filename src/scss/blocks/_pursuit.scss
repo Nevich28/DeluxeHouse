@@ -1,0 +1,105 @@
+.pursuit {
+    height: 2420px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    &__magazin {
+        z-index: 20;
+        position: absolute;
+        left: 0;
+        top: 226px;
+        width: 950px;
+        //height: 950px;
+        object-fit: cover;
+    }
+    &__cut {
+        overflow: hidden;
+       width: 200%;
+       height: 1940px;
+       transform: skew(0, -17deg);
+    }
+    &__back {
+        margin-top: -300px;
+        transform: skew(0, 17deg);
+        width: 50%;
+        height: 2500px;
+        background: url('../img/pursuit/komnata_back.jpg') center (center/cover) no-repeat;
+        padding-top: 380px;
+    }
+    &__box_title {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__title {
+        margin: 0;
+        padding: 0;
+        font-family: EBGaramond;
+        line-height: 60px;
+        width: 506px;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 60px;
+        color: #191919;
+        span {
+            font-family: EBGaramond;
+            line-height: 60px;
+            font-weight: 700;
+            text-transform: uppercase; 
+        }
+    }
+    &__box_descr {
+        margin-top: 358px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__descr {
+        width: 500px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #404040;
+        span {
+            font-size: 24px;
+        }
+    }
+    &__tiket {
+        &_box {
+            margin-top: 263px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_item {
+            width: 270px;
+            height: 518px;
+            background-color: $mainBackground;
+            border-radius: 20px;
+            padding: 35px 20px;
+        }
+        &_img {
+            display: block;
+            margin: auto;
+            width: 133px;
+            object-fit: cover;
+        }
+        &_title {
+            margin-top: 39px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        &_descr {
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: #CDCDCB;
+        }
+    }
+}

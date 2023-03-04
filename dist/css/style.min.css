@@ -61,13 +61,16 @@
   font-family: Roboto;
 }
 
+body {
+  background-color: #191919;
+}
+
 .container {
   margin: 0 auto;
   width: 1170px;
 }
 
 .header {
-  background-color: #191919;
   height: 67px;
   position: relative;
   padding-top: 13px;
@@ -192,8 +195,9 @@
 
 .design {
   height: 685px;
-  background-color: #191919;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 .design__main {
   width: 100%;
@@ -294,8 +298,6 @@
 }
 
 .project {
-  min-height: 2250px;
-  background-color: #191919;
   padding-top: 90px;
   position: relative;
   overflow: hidden;
@@ -373,8 +375,6 @@
 }
 
 .quality {
-  min-height: 1100px;
-  background-color: #191919;
   padding-top: 120px;
   position: relative;
 }
@@ -510,6 +510,188 @@
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.pursuit {
+  height: 2420px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.pursuit__magazin {
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: 226px;
+  width: 950px;
+  object-fit: cover;
+}
+.pursuit__cut {
+  overflow: hidden;
+  width: 200%;
+  height: 1940px;
+  transform: skew(0, -17deg);
+}
+.pursuit__back {
+  margin-top: -300px;
+  transform: skew(0, 17deg);
+  width: 50%;
+  height: 2500px;
+  background: url("../img/pursuit/komnata_back.jpg") center center/cover no-repeat;
+  padding-top: 380px;
+}
+.pursuit__box_title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.pursuit__title {
+  margin: 0;
+  padding: 0;
+  font-family: EBGaramond;
+  line-height: 60px;
+  width: 506px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  color: #191919;
+}
+.pursuit__title span {
+  font-family: EBGaramond;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.pursuit__box_descr {
+  margin-top: 358px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.pursuit__descr {
+  width: 500px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #404040;
+}
+.pursuit__descr span {
+  font-size: 24px;
+}
+.pursuit__tiket_box {
+  margin-top: 263px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pursuit__tiket_item {
+  width: 270px;
+  height: 518px;
+  background-color: #191919;
+  border-radius: 20px;
+  padding: 35px 20px;
+}
+.pursuit__tiket_img {
+  display: block;
+  margin: auto;
+  width: 133px;
+  object-fit: cover;
+}
+.pursuit__tiket_title {
+  margin-top: 39px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.pursuit__tiket_descr {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #CDCDCB;
+}
+
+.reasons {
+  margin-top: -120px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.reasons__back {
+  position: absolute;
+  object-fit: cover;
+}
+.reasons .pos1 {
+  right: 0px;
+  top: 580px;
+}
+.reasons .pos2 {
+  left: 0px;
+  bottom: 1250px;
+}
+.reasons .pos3 {
+  right: 0px;
+  bottom: 605px;
+}
+.reasons__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 190px;
+}
+.reasons_marg_side {
+  margin-left: 100px;
+}
+.reasons__img {
+  z-index: 10;
+  width: 100%;
+  object-fit: cover;
+}
+.reasons__subtitle {
+  margin-top: 150px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #6E6E6E;
+}
+.reasons__title {
+  margin-top: 18px;
+  font-family: EBGaramond;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  color: #E1DECE;
+}
+.reasons__descr {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #C4C4C4;
+}
+
+.useful {
+  margin-top: -370px;
+  height: 2420px;
+  width: 100%;
+  overflow: hidden;
+}
+.useful__cut {
+  overflow: hidden;
+  width: 200%;
+  height: 1940px;
+  transform: skew(0, -17deg);
+}
+.useful__back {
+  margin-top: -300px;
+  transform: skew(0, 17deg);
+  width: 50%;
+  height: 2500px;
+  background: url("../img/useful/back.jpg") center center/cover no-repeat;
+}
+
 @media (max-height: 500px) {
   .design__social {
     display: none;
@@ -532,9 +714,6 @@
   }
   .devider {
     width: 89%;
-  }
-  .quality {
-    min-height: 1050px;
   }
   .quality__box {
     width: 89%;
@@ -583,7 +762,6 @@
     grid-template-columns: repeat(3, 325px);
   }
   .project {
-    min-height: 1730px;
     padding-top: 55px;
   }
   .project__box {
@@ -609,7 +787,6 @@
     width: 85%;
   }
   .quality {
-    min-height: 900px;
     padding-top: 70px;
   }
   .quality__box {
@@ -640,6 +817,38 @@
   }
   .quality__decor {
     bottom: 63px;
+  }
+  .pursuit {
+    height: 1885px;
+  }
+  .pursuit__cut {
+    height: 1570px;
+  }
+  .pursuit__back {
+    padding-top: 320px;
+  }
+  .pursuit__magazin {
+    width: 780px;
+    top: 170px;
+  }
+  .pursuit__box_descr {
+    margin-top: 290px;
+  }
+  .pursuit__tiket_box {
+    margin-top: 90px;
+  }
+  .pursuit__tiket_item {
+    width: 215px;
+  }
+  .pursuit__tiket_img {
+    width: 125px;
+  }
+  .pursuit__tiket_title {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .pursuit__tiket_desrc {
+    line-height: 20;
   }
 }
 @media (max-width: 992px) {
@@ -731,7 +940,6 @@
     padding-top: 130px;
   }
   .project {
-    min-height: 2710px;
     padding-top: 45px;
   }
   .project__box {
@@ -747,7 +955,6 @@
     right: -242px;
   }
   .quality {
-    min-height: 930px;
     padding-top: 30px;
   }
   .quality__box {
@@ -756,6 +963,83 @@
   }
   .quality__decor {
     bottom: 250px;
+  }
+  .pursuit {
+    height: 1860px;
+  }
+  .pursuit__cut {
+    height: 1620px;
+  }
+  .pursuit__magazin {
+    width: 490px;
+  }
+  .pursuit__back {
+    padding-top: 315px;
+  }
+  .pursuit__title {
+    width: 440px;
+    line-height: 35px;
+  }
+  .pursuit__box_descr {
+    margin-top: 200px;
+    line-height: 22;
+  }
+  .pursuit__descr {
+    width: 440px;
+  }
+  .pursuit__tiket_box {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+  }
+  .pursuit__tiket_item {
+    margin-top: 20px;
+    width: 300px;
+    height: 390px;
+  }
+  .pursuit__tiket_img {
+    width: 105px;
+  }
+  .pursuit__tiket_title {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .pursuit__tiket_descr {
+    margin-top: 15px;
+    font-size: 13px;
+  }
+  .reasons__img {
+    height: 400px;
+  }
+  .reasons_marg_side {
+    margin-left: 50px;
+  }
+  .reasons__subtitle {
+    margin-top: 20px;
+  }
+  .reasons__block {
+    margin-bottom: 100px;
+  }
+  .reasons__title {
+    margin-top: 5px;
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .reasons__descr {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .reasons__back {
+    width: 250px;
+  }
+  .reasons .pos1 {
+    top: 250px;
+  }
+  .reasons .pos2 {
+    bottom: 750px;
+  }
+  .reasons .pos3 {
+    bottom: 370px;
   }
 }
 @media (max-width: 768px) {
@@ -781,7 +1065,6 @@
     left: -212px;
   }
   .project {
-    min-height: 2100px;
     padding-top: 30px;
   }
   .project__box {
@@ -806,9 +1089,6 @@
     width: 190px;
     height: 55px;
   }
-  .quality {
-    min-height: 740px;
-  }
   .quality__box {
     grid-template-columns: auto;
   }
@@ -823,6 +1103,73 @@
   }
   .quality__btn_box {
     margin: 20px auto 0 auto;
+  }
+  .pursuit {
+    height: 1710px;
+  }
+  .pursuit__cut {
+    height: 1530px;
+  }
+  .pursuit__magazin {
+    width: 360px;
+    top: 70px;
+  }
+  .pursuit__back {
+    padding-top: 303px;
+  }
+  .pursuit__title {
+    font-size: 26px;
+    width: 290px;
+    line-height: 30px;
+  }
+  .pursuit__title span {
+    line-height: 35px;
+  }
+  .pursuit__box_descr {
+    margin-top: 155px;
+    line-height: 22;
+  }
+  .pursuit__descr {
+    font-size: 14px;
+    width: 370px;
+  }
+  .pursuit__tiket_item {
+    padding: 20px 20px;
+    width: 240px;
+  }
+  .pursuit__tiket_img {
+    width: 95px;
+  }
+  .reasons__img {
+    height: 315px;
+  }
+  .reasons_marg_side {
+    margin-left: 20px;
+  }
+  .reasons__block {
+    margin-bottom: 60px;
+  }
+  .reasons__title {
+    margin-top: 0px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .reasons__descr {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .reasons__back {
+    width: 210px;
+  }
+  .reasons .pos1 {
+    top: 200px;
+  }
+  .reasons .pos2 {
+    bottom: 600px;
+  }
+  .reasons .pos3 {
+    bottom: 290px;
   }
 }
 @media (max-width: 576px) {
@@ -856,9 +1203,6 @@
   .design__social {
     display: none;
   }
-  .project {
-    min-height: 4830px;
-  }
   .project__title {
     font-size: 35px;
   }
@@ -879,14 +1223,66 @@
   .btn_box_btn {
     margin-top: 25px;
   }
-  .quality {
-    min-height: 1080px;
-  }
   .quality__title {
     font-size: 30px;
     line-height: 35px;
   }
   .quality__decor {
     font-size: 60px;
+  }
+  .pursuit {
+    height: 2400px;
+  }
+  .pursuit__cut {
+    height: 2300px;
+  }
+  .pursuit__magazin {
+    width: 180px;
+    top: 60px;
+  }
+  .pursuit__back {
+    padding-top: 310px;
+    height: 2700px;
+  }
+  .pursuit__title {
+    font-size: 17px;
+    width: 195px;
+    line-height: 19px;
+  }
+  .pursuit__title span {
+    line-height: 10px;
+  }
+  .pursuit__box_descr {
+    margin-top: 125px;
+    padding: 0 10px;
+  }
+  .pursuit__descr {
+    width: 300px;
+  }
+  .reasons {
+    padding: 0px 10px 0 10px;
+    margin-top: -40px;
+  }
+  .reasons_marg_side {
+    margin-left: 0px;
+  }
+  .reasons__block {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .reasons__back {
+    width: 190px;
+  }
+  .reasons .pos2 {
+    top: 770px;
+  }
+  .reasons .pos3 {
+    bottom: 560px;
+  }
+  .reasons .order0 {
+    order: 1;
+  }
+  .reasons .order1 {
+    order: 0;
   }
 }
