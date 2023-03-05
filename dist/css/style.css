@@ -778,6 +778,7 @@ body {
 }
 .step__content_title {
   margin-top: 50px;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -839,9 +840,6 @@ body {
   }
   .quality__btn_box {
     margin: 70px auto 0 auto;
-  }
-  .step {
-    padding-top: 340px;
   }
 }
 @media (max-width: 1200px) {
@@ -953,7 +951,7 @@ body {
     line-height: 20;
   }
   .useful {
-    height: 1830px;
+    height: 1880px;
   }
   .useful__content_item {
     width: 290px;
@@ -964,6 +962,12 @@ body {
   }
   .useful__content_descr {
     font-size: 13px;
+  }
+  .step {
+    padding-top: 410px;
+  }
+  .step__content_box {
+    margin-top: 70px;
   }
 }
 @media (max-width: 992px) {
@@ -1158,7 +1162,7 @@ body {
   }
   .useful {
     margin-top: -235px;
-    height: 1590px;
+    height: 1650px;
   }
   .useful__cut {
     height: 1340px;
@@ -1179,6 +1183,23 @@ body {
   }
   .useful__content_descr {
     line-height: 19px;
+  }
+  .step {
+    padding-top: 410px;
+  }
+  .step__content_box {
+    margin-top: 50px;
+  }
+  .step__content_item {
+    margin-bottom: 55px;
+  }
+  .step__content_title {
+    margin-top: 30px;
+  }
+  .step__title {
+    font-size: 35px;
+    width: 440px;
+    line-height: 45px;
   }
 }
 @media (max-width: 768px) {
@@ -1311,7 +1332,7 @@ body {
     bottom: 290px;
   }
   .useful {
-    height: 1455px;
+    height: 1510px;
     margin-top: -155px;
   }
   .useful__back {
@@ -1338,6 +1359,20 @@ body {
   }
   .useful .mt {
     margin-top: 90px;
+  }
+  .step {
+    padding-top: 450px;
+  }
+  .step__content_box {
+    margin-top: 30px;
+  }
+  .step__content_item {
+    width: 255px;
+  }
+  .step__title {
+    font-size: 31px;
+    width: 390px;
+    line-height: 41px;
   }
 }
 @media (max-width: 576px) {
@@ -1454,7 +1489,7 @@ body {
     order: 0;
   }
   .useful {
-    height: 2000px;
+    height: 2080px;
     margin-top: -30px;
   }
   .useful__back {
@@ -1476,5 +1511,13 @@ body {
     width: 300px;
     grid-template-rows: 60px 300px 160px;
     margin-bottom: 15px;
+  }
+  .step {
+    padding: 450px 10px 0 10px;
+  }
+  .step__title {
+    font-size: 23px;
+    width: 260px;
+    line-height: 30px;
   }
 }
