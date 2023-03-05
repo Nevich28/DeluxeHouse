@@ -1,0 +1,51 @@
+.step {
+    background: url('../img/step/back.jpg') center (center/cover) no-repeat;
+    width: 100%;
+    overflow: hidden;
+    //height: 1000px;
+    margin-top: -540px;
+    padding-top: 510px;
+    &__title_box {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__title {
+        width: 600px;
+        font-family: EBGaramond;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 60px;
+        color: #FFFFFF;
+        span {
+            font-family: EBGaramond;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    &__content {
+        &_box {
+            margin-top: 120px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        &_item {
+            width: 310px;
+            margin-bottom: 85px;
+        }
+        &_title {
+            margin-top: 50px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+        }
+        &_descr {
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #C4C4C4;
+        }
+    }
+}

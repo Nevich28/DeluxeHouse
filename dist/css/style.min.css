@@ -674,22 +674,121 @@ body {
 
 .useful {
   margin-top: -370px;
-  height: 2420px;
+  height: 2000px;
   width: 100%;
   overflow: hidden;
 }
 .useful__cut {
   overflow: hidden;
   width: 200%;
-  height: 1940px;
+  height: 1510px;
   transform: skew(0, -17deg);
 }
 .useful__back {
   margin-top: -300px;
   transform: skew(0, 17deg);
   width: 50%;
-  height: 2500px;
+  height: 2060px;
   background: url("../img/useful/back.jpg") center center/cover no-repeat;
+  padding-top: 500px;
+}
+.useful__title_box {
+  display: flex;
+  justify-content: flex-end;
+}
+.useful__title {
+  width: 620px;
+  font-family: EBGaramond;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  color: #191919;
+}
+.useful__title span {
+  font-family: EBGaramond;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.useful__content_box {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.useful__content_item {
+  width: 370px;
+  display: grid;
+  grid-template-rows: 110px 410px 280px;
+}
+.useful__content_title {
+  font-family: EBGaramond;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #101010;
+}
+.useful__content_descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #101010;
+}
+.useful__content_descr span {
+  font-weight: 700;
+}
+.useful .down {
+  align-self: end;
+}
+.useful .mt {
+  margin-top: 70px;
+}
+
+.step {
+  background: url("../img/step/back.jpg") center center/cover no-repeat;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -540px;
+  padding-top: 510px;
+}
+.step__title_box {
+  display: flex;
+  justify-content: flex-end;
+}
+.step__title {
+  width: 600px;
+  font-family: EBGaramond;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+.step__title span {
+  font-family: EBGaramond;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.step__content_box {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.step__content_item {
+  width: 310px;
+  margin-bottom: 85px;
+}
+.step__content_title {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.step__content_descr {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #C4C4C4;
 }
 
 @media (max-height: 500px) {
@@ -740,6 +839,9 @@ body {
   }
   .quality__btn_box {
     margin: 70px auto 0 auto;
+  }
+  .step {
+    padding-top: 340px;
   }
 }
 @media (max-width: 1200px) {
@@ -849,6 +951,19 @@ body {
   }
   .pursuit__tiket_desrc {
     line-height: 20;
+  }
+  .useful {
+    height: 1830px;
+  }
+  .useful__content_item {
+    width: 290px;
+    grid-template-rows: 127px 410px 400px;
+  }
+  .useful__content_title {
+    font-size: 22px;
+  }
+  .useful__content_descr {
+    font-size: 13px;
   }
 }
 @media (max-width: 992px) {
@@ -1041,6 +1156,30 @@ body {
   .reasons .pos3 {
     bottom: 370px;
   }
+  .useful {
+    margin-top: -235px;
+    height: 1590px;
+  }
+  .useful__cut {
+    height: 1340px;
+  }
+  .useful__back {
+    padding-top: 420px;
+  }
+  .useful__content_box {
+    margin-top: 50px;
+  }
+  .useful__content_item {
+    width: 215px;
+    grid-template-rows: 100px 385px 450px;
+  }
+  .useful__content_title {
+    font-size: 21px;
+    line-height: 27px;
+  }
+  .useful__content_descr {
+    line-height: 19px;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1171,6 +1310,35 @@ body {
   .reasons .pos3 {
     bottom: 290px;
   }
+  .useful {
+    height: 1455px;
+    margin-top: -155px;
+  }
+  .useful__back {
+    padding-top: 360px;
+  }
+  .useful__cut {
+    height: 1270px;
+  }
+  .useful__title {
+    font-size: 33px;
+    line-height: 45px;
+    width: 370px;
+  }
+  .useful__content_item {
+    width: 160px;
+  }
+  .useful__content_title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .useful__content_descr {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .useful .mt {
+    margin-top: 90px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -1284,5 +1452,29 @@ body {
   }
   .reasons .order1 {
     order: 0;
+  }
+  .useful {
+    height: 2000px;
+    margin-top: -30px;
+  }
+  .useful__back {
+    height: 2500px;
+  }
+  .useful__cut {
+    height: 1900px;
+  }
+  .useful__title {
+    font-size: 32px;
+    line-height: 40px;
+    width: 300px;
+  }
+  .useful__content_box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .useful__content_item {
+    width: 300px;
+    grid-template-rows: 60px 300px 160px;
+    margin-bottom: 15px;
   }
 }
