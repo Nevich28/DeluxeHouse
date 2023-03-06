@@ -62,9 +62,6 @@
             margin: 70px auto 0 auto;
         }
     }
-    // .step {
-    //     padding-top: 340px;
-    // }
 }
 @media (max-width: 1200px) {
     .container {
@@ -185,6 +182,11 @@
             }
         }
     }
+    .reasons {
+        &__img {
+            width: 480px;
+        }
+    }
     .useful {
         height: 1880px;
         &__content {
@@ -205,6 +207,21 @@
         &__content {
             &_box {
                 margin-top: 70px;
+            }
+        }
+    }
+    .footer {
+        &__coordinates {
+            width: 470px;
+        }
+        &__map {
+            width: 470px;
+        }
+        &__social {
+            svg {
+                &:hover {
+                    scale: 1;
+                }
             }
         }
     }
@@ -306,8 +323,8 @@
             font-size: 70px;
             line-height: 85px;
         }
-        &__img {
-            padding-top: 130px;
+        &__title {
+            margin-top: 130px;
         }
     }
     .project {
@@ -383,7 +400,7 @@
     }
     .reasons {
         &__img {
-            height: 400px;
+           width: 370px;
         }
         &_marg_side {
             margin-left: 50px;
@@ -461,6 +478,21 @@
             line-height: 45px;
         }
     }
+    .footer {
+        &__coordinates {
+            margin-top: 20px;
+            &_item {
+                width: 180px;
+            }
+        }
+        &__map {
+            margin-left: 15px;
+            width: 450px;
+        }
+        &__social {
+            width: 145px;
+        }
+    }
 }
 @media (max-width: 768px) {
     .container {
@@ -473,10 +505,10 @@
             bottom: -28px;
         }
         &__img {
-            padding-top: 100px;
             width: calc(100vw - 75px);
         }
         &__title {
+            margin-top: 100px;
             font-size: 40px;
         }
         &__descr {
@@ -569,7 +601,7 @@
     }
     .reasons {
         &__img {
-            height: 315px;
+            width: 280px;
         }
         &_marg_side {
             margin-left: 20px;
@@ -647,6 +679,18 @@
             line-height: 41px;
         }
     }
+    .footer {
+        &__coordinates {
+            margin-top: 0;
+            &_item {
+                width: 250px;
+                margin-bottom: 10px;
+            }
+            &_title {
+                margin-bottom: 3px;
+            }
+        }
+    }
 }
 @media (max-width: 576px) {
     .container {
@@ -667,7 +711,6 @@
     .design {
         &__img {
             width: 100%;
-            padding-top: 70px;
         }
         &__decor {
             font-size: 36px;
@@ -675,6 +718,7 @@
             right: 10px;
         }
         &__title {
+            margin-top: 70px;
             font-size: 30px;
         }
         &__social {
@@ -800,6 +844,20 @@
             font-size: 23px;
             width: 260px;
             line-height: 30px;
+        }
+    }
+    .footer {
+        &__box {
+            flex-wrap: wrap;
+        }
+        &__coordinates {
+            &_item {
+                margin-bottom: 20px;
+            }
+        }
+        &__map {
+            margin-left: 0;
+            margin-top: 15px;
         }
     }
 }

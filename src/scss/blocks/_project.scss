@@ -12,6 +12,9 @@
         line-height: 45px;
         text-align: center;
         color: $mainFonts;
+        span {
+            font-size: 60px;
+        }
     }
     &__devider {
         margin: 23px auto 0 auto;

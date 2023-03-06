@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html', {
+        "title":"Ремонт",
+        "preload":""
+    })
+<body>
+    @@include('html/header.html',{"class":"header__logo_small"})
+
+    <section class="repair">
+        <div class="repair__img_cont">
+            <img src="@img/rep/repair/room.jpg" alt="room" class="repair__img">
+            <div class="repair__subtitle">Гарантия качества и соблюдения сроков!</div>
+            <h1 class="repair__title">Ремонт квартир любой сложности</h1>
+            <div class="repair__bread_crumbs">
+                <a href="index.html">Главная</a> <div> / </div> <a class="color" href="#">Ремонт</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="repair__descr">Наш богатый опыт ведения контроля за отделочными работами позволил нам наладить менеджмент на высоком уровне профессионализма.
+                    <br><br>
+                С нами ремонт и отделка квартир и общественных помещений станут приятным событием. Производить все работы по ремонту и отделке будет большая высоко квалифицированная бригада здешних мастеров со стажем ремонтно-отделочных работ более 10 лет.                 
+            </div>            
+        </div>
+    </section>
+
+    @@include('html/project.html',{"pr_title":"Более <span>900</span> успешных проектов"})
+
+    @@include('html/footer.html',{})
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script src="files/slick/slick.min.js"></script>
+    <script src="/js/jquery.inputmask.js"></script> -->
+    <script src="js/script.min.js"></script>
+</body>
+</html>
