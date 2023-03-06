@@ -3,29 +3,29 @@ import * as flsFunctions from "./modules/functions.js"; // функция для
 
 window.addEventListener('DOMContentLoaded', () => {
 
-flsFunctions.isWebp(); // функция для обработки WebP
+    flsFunctions.isWebp(); // функция для обработки WebP
 
-// делаем выпадающее меню в десктопе
-//выбираем переменные
-const menuBtn = document.querySelector('#header_menu'),
-      menuList = document.querySelector('.header__portfolio');
+    // делаем выпадающее меню в десктопе
+    //выбираем переменные
+    const menuBtn = document.querySelector('#header_menu'),
+        menuList = document.querySelector('.header__portfolio');
 
-//выводим меню при нажатии      
-menuBtn.addEventListener('click', () => {
-   if (menuList.style.display !== 'block' && menuList.style.display !== 'flex') {
-        menuBtn.firstElementChild.classList.add('header_no_emphasize');
-        $(menuList).fadeIn();
-   }
-});
-
-// скрываем при нажатии вне меню
-$(document).mouseup(function (e) {
-    const container = $(".header__portfolio");
-    if (container.has(e.target).length === 0){
-        $(menuList).fadeOut();
-        menuBtn.firstElementChild.classList.remove('header_no_emphasize');
+    //выводим меню при нажатии      
+    menuBtn.addEventListener('click', () => {
+    if (menuList.style.display !== 'block' && menuList.style.display !== 'flex') {
+            menuBtn.firstElementChild.classList.add('header_no_emphasize');
+            $(menuList).fadeIn();
     }
-});
+    });
+
+    // скрываем при нажатии вне меню
+    $(document).mouseup(function (e) {
+        const container = $(".header__portfolio");
+        if (container.has(e.target).length === 0){
+            $(menuList).fadeOut();
+            menuBtn.firstElementChild.classList.remove('header_no_emphasize');
+        }
+    });
 
 // меню с гамбургером
     //Управление гамбургером
@@ -47,4 +47,28 @@ $(document).mouseup(function (e) {
             }
         });
     });
-})
+
+    //управление табами на странице rep
+    const tabs = document.querySelectorAll('.terms__tab'),
+        tabsContent = document.querySelectorAll('.terms__swich');
+
+        tabsContent.forEach(item => { //обнуление всех и выбор первого активным
+            $(item).fadeOut(10);
+        });
+        $(tabsContent[0]).fadeIn(10);
+
+    tabs.forEach((tab, i) => {
+        tab.addEventListener('click', () => {
+            if (!tab.classList.contains('terms__activ_tab')) {
+                tabs.forEach(item => {
+                    item.classList.remove('terms__activ_tab')
+                });
+                tab.classList.add('terms__activ_tab')
+                tabsContent.forEach(item => {
+                    $(item).fadeOut();
+                });
+                $(tabsContent[i]).fadeIn();
+            };
+        });
+    });
+});

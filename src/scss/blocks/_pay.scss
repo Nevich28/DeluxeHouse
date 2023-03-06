@@ -1,0 +1,31 @@
+.pay {
+    margin-top: 170px;
+    padding: 0 10px;
+    &__title {
+        font-family: EBGaramond;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        color: $mainFonts;
+        text-align: center;
+    }
+    &__content {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        &_item {
+            width: 520px;
+        }
+        &_descr {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+            span {
+                font-size: 30px;
+            }
+        }
+    }
+    
+}
