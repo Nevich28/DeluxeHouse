@@ -34,7 +34,7 @@
         font-size: 20px;
         line-height: 1;
         background: linear-gradient(106.99deg, #E0DEDE 24.92%, #A2A0A0 53.57%);
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         span {
             font-size: 14px;
@@ -87,7 +87,7 @@
         font-weight: 400;
         font-size: 20px;
         background: linear-gradient(106.99deg, #E0DEDE 24.92%, #A2A0A0 53.57%);
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         &:hover {
             text-decoration: none;           

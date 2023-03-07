@@ -1,0 +1,72 @@
+.guarantee {
+    width: 100%;
+    overflow: hidden;
+    padding: 120px 10px 0 10px;
+    &__title {
+        font-family: EBGaramond;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 142.6%;
+        text-align: center;
+        color: $mainFonts;
+    }
+    &__slider_box {
+        margin-top: 80px;
+        .slick-dots li button:before {
+            content: "";
+            width: 50px;
+            height: 5px;
+            background-color: #565656;
+        }
+        .slick-dots {
+            bottom: -45px;
+        }
+        .slick-dots li {
+            margin: 0 20px;
+        }  
+        .slick-dots li.slick-active button:before {
+            margin-right: 10px;
+            background-color: #ffff;
+        }
+    }
+    &__slider_img {
+        width: 100%;
+        object-fit: cover;
+    }
+    &__arrows {
+        position: relative;
+
+    }
+    &__prev {
+        position: absolute;
+        top: 270px;
+        left: -60px;
+        cursor: pointer;
+        svg {
+            width: 40px;
+            height: 40px;
+            fill: $mainFonts;
+        }
+        &:hover {
+            svg {
+                fill: #ffff;
+            }
+        }
+    }
+    &__next {
+        position: absolute;
+        top: 270px;
+        right: -60px;
+        cursor: pointer;
+        svg {
+            width: 40px;
+            height: 40px;
+            fill: $mainFonts;
+        }
+        &:hover {
+            svg {
+                fill: #ffff;
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-.repair {
+.abouttop {
     width: 100%;
     overflow: hidden;
     //padding: 0 10px;
@@ -17,17 +17,11 @@
         }
     }
     &__subtitle {
+        margin: auto;
+        width: 470px;
         font-weight: 400;
         font-size: 14px;
         line-height: 28px;
-        text-align: center;
-        color: #FFFFFF;
-    }
-    &__title {
-        font-family: EBGaramond;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 45px;
         text-align: center;
         color: #FFFFFF;
     }
@@ -35,7 +29,7 @@
         display: flex;
         justify-content: center;
         align-items:  center;
-        margin-top: 100px;
+        margin-top: 90px;
         color: #9F9F9F;
         font-size: 14px;
         div {
@@ -49,14 +43,5 @@
         .color {
             color: #E1DECE;
         }
-    }
-    &__descr {
-        margin: 80px auto;
-        width: 750px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        text-align: center;
-        color: #FFFFFF;
     }
 }

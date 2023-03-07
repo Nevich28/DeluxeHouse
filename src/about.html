@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html', {
+        "title":"О нас",
+        "preload":"<link rel='preload' as='image' href='@img/rep/repair/room.jpg'>"
+                    
+                    
+    })
+<body>
+    @@include('html/header.html',{"class":"header__logo_small"})
+
+    <div class="abouttop">
+        <div class="abouttop__img_cont">
+            <img src="@img/about/back.jpg" alt="room" class="abouttop__img">
+            <div class="abouttop__subtitle">Мы не просто дизайн-студия, мы - команда талантливых людей, обладающих тонким чутьем, вкусом и большим опытом во главе с опытным и творческим руководителем. </div>
+            <div class="abouttop__bread_crumbs">
+                <a href="index.html">Главная</a> <div> / </div> <a class="color" href="#">О нас</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="video">
+        <div class="container">
+            <iframe src="https://www.youtube.com/embed/bLwQnK6xplI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="years">
+        <div class="years__cut">
+            <div class="years__back">
+                
+            </div>
+        </div>
+    </div>
+   
+    @@include('html/footer.html',{})
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script src="files/slick/slick.min.js"></script> -->
+    <!-- <script src="/js/jquery.inputmask.js"></script> -->
+    <script src="js/script.min.js"></script>
+</body>
+</html>

@@ -71,4 +71,25 @@ window.addEventListener('DOMContentLoaded', () => {
             };
         });
     });
+
+
+    //слайдер на странице rem
+    $('.guarantee__slider_box').slick({
+        dots: true,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        prevArrow: $('.guarantee__prev'),
+        nextArrow: $('.guarantee__next'),
+        responsive: [
+            {
+                breakpoint: 1300,
+                settings: {
+                    arrows: false,
+                    autoplay: true,
+                    speed: 1000
+                }
+            }
+        ],
+      });
 });

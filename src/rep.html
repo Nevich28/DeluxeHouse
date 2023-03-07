@@ -2,7 +2,9 @@
 <html lang="ru">
     @@include('html/head.html', {
         "title":"Ремонт",
-        "preload":"<link rel='preload' as='image' href='@img/rep/repair/room.jpg'>"
+        "preload":"<link rel='preload' as='image' href='@img/rep/repair/room.jpg'><link rel='stylesheet' href='files/slick/slick.css'><link rel='stylesheet' href='files/slick/slick-theme.css'>"
+                    
+                    
     })
 <body>
     @@include('html/header.html',{"class":"header__logo_small"})
@@ -93,14 +95,54 @@
                     </div>
                 </div>
             </div>
+            <div class="btn_box terms__btn_box">
+                <button class="btn_box_btn">О нас</button>
+                <button class="btn_box_btn">Наши услуги</button>
+            </div>  
+        </div>
+    </section>
+
+    <section class="guarantee">
+        <div class="container">
+            <h3 class="guarantee__title">Мы предоставляем гарантию 1 год на свои услуги, - гарантийное, а также постгарантийное обслуживание.</h3>
+            <div class="guarantee__arrows">
+                <div class="guarantee__prev">
+                    <svg>
+                        <use xlink:href="img/icons/icons.svg#circle-chevron-left"></use>
+                    </svg>
+                </div>    
+                <div class="guarantee__next">
+                    <svg>
+                        <use xlink:href="img/icons/icons.svg#circle-chevron-right"></use>
+                    </svg>
+                </div> 
+                
+            <div class="guarantee__slider_box">
+                <div class="guarantee__slider_item">
+                    <img src="@img/guarantee/slide1.jpg" alt="slide1" class="guarantee__slider_img">
+                </div>
+                <div class="guarantee__slider_item">
+                    <img src="@img/guarantee/slide1.jpg" alt="slide1" class="guarantee__slider_img">
+                </div>
+                <div class="guarantee__slider_item">
+                    <img src="@img/guarantee/slide1.jpg" alt="slide1" class="guarantee__slider_img">
+                </div>
+                <div class="guarantee__slider_item">
+                    <img src="@img/guarantee/slide1.jpg" alt="slide1" class="guarantee__slider_img">
+                </div>
+                <div class="guarantee__slider_item">
+                    <img src="@img/guarantee/slide1.jpg" alt="slide1" class="guarantee__slider_img">
+                </div>
+            </div>
+            </div>
         </div>
     </section>
 
     @@include('html/footer.html',{})
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <!-- <script src="files/slick/slick.min.js"></script>
-    <script src="/js/jquery.inputmask.js"></script> -->
+    <script src="files/slick/slick.min.js"></script>
+    <!-- <script src="/js/jquery.inputmask.js"></script> -->
     <script src="js/script.min.js"></script>
 </body>
 </html>

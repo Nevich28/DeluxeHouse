@@ -1,0 +1,36 @@
+.work {
+    width: 100%;
+    overflow: hidden;
+    padding: 120px 10px 80px 10px;
+    position: relative;
+    &__title {
+        font-family: EBGaramond;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 45px;
+        text-align: center;
+        color: $mainFonts;
+    }
+    &__content {
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        &_img {
+            height: 610px;
+            object-fit: cover;
+        }
+        &_descr { 
+            width: 560px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+    }
+    .pos1 {
+        position: absolute;
+        left: -20px;
+        bottom: -7px;
+    }
+}
