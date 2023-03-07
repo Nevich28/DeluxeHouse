@@ -1,5 +1,92 @@
 .years {
-    height: 2420px;
+    height: 2570px;
     width: 100%;
     overflow: hidden;
+    margin-top: -150px;
+    position: relative;
+    margin-bottom: -50px;
+    &__cut {
+        margin-top: 960px;
+        overflow: hidden;
+        width: 200%;
+        height: 1600px;
+        transform: skew(0, 30deg);
+    }
+    &__back {
+        margin-top: -560px;
+        transform: skew(0, -30deg);
+        width: 50%;
+        height: 2720px;
+        background-color: #D3D3D3;;
+        padding-top: 380px;
+    }
+    &__about_box {
+        width: 100%;
+        position: relative;
+    }
+    &__about {
+        z-index: 5;
+        position: absolute;
+        top: 85px;
+        background-color: $mainBackground;
+        padding: 40px 105px 140px 105px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+    &__about2 {
+        z-index: 5;
+        position: absolute;
+        top: 1960px;
+        background-color: $mainBackground;
+        padding: 40px 105px 140px 105px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+    &__buklet {
+        width: 510px;
+        object-fit: cover;
+        z-index: 3;
+        position: absolute;
+        top: 800px;
+    }
+    &__descr_box {
+        margin-top: 600px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__descr_box2 {
+        margin-top: 140px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__descr {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 70px;
+        color: $mainBackground;
+        span {
+            font-size: 150px; 
+        }
+    }
+    &__descrm {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 70px;
+        color: $mainBackground;
+    }
+    &__descr2 {
+        position: relative;
+        z-index: 10;
+        width: 640px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $mainBackground;
+    }
 }

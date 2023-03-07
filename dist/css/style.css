@@ -652,6 +652,7 @@ body {
   margin-bottom: 190px;
 }
 .reasons__img {
+  position: relative;
   z-index: 10;
   width: 580px;
   object-fit: cover;
@@ -1346,9 +1347,96 @@ body {
 }
 
 .years {
-  height: 2420px;
+  height: 2570px;
   width: 100%;
   overflow: hidden;
+  margin-top: -150px;
+  position: relative;
+  margin-bottom: -50px;
+}
+.years__cut {
+  margin-top: 960px;
+  overflow: hidden;
+  width: 200%;
+  height: 1600px;
+  transform: skew(0, 30deg);
+}
+.years__back {
+  margin-top: -560px;
+  transform: skew(0, -30deg);
+  width: 50%;
+  height: 2720px;
+  background-color: #D3D3D3;
+  padding-top: 380px;
+}
+.years__about_box {
+  width: 100%;
+  position: relative;
+}
+.years__about {
+  z-index: 5;
+  position: absolute;
+  top: 85px;
+  background-color: #191919;
+  padding: 40px 105px 140px 105px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.years__about2 {
+  z-index: 5;
+  position: absolute;
+  top: 1960px;
+  background-color: #191919;
+  padding: 40px 105px 140px 105px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.years__buklet {
+  width: 510px;
+  object-fit: cover;
+  z-index: 3;
+  position: absolute;
+  top: 800px;
+}
+.years__descr_box {
+  margin-top: 600px;
+  display: flex;
+  justify-content: flex-end;
+}
+.years__descr_box2 {
+  margin-top: 140px;
+  display: flex;
+  justify-content: flex-end;
+}
+.years__descr {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 70px;
+  color: #191919;
+}
+.years__descr span {
+  font-size: 150px;
+}
+.years__descrm {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 70px;
+  color: #191919;
+}
+.years__descr2 {
+  position: relative;
+  z-index: 10;
+  width: 640px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #191919;
 }
 
 @media (max-height: 500px) {
@@ -1583,6 +1671,28 @@ body {
     width: 440px;
     font-size: 14px;
     line-height: 21px;
+  }
+  .years {
+    height: 2120px;
+  }
+  .years__cut {
+    height: 1130px;
+  }
+  .years__about {
+    padding: 40px 105px 70px 105px;
+  }
+  .years__buklet {
+    top: 710px;
+  }
+  .years__descr_box {
+    margin-top: 375px;
+  }
+  .years__descr_box2 {
+    margin-top: 100px;
+  }
+  .years__about2 {
+    top: 1650px;
+    padding: 40px 105px 60px 105px;
   }
 }
 @media (max-width: 992px) {
@@ -1875,6 +1985,43 @@ body {
   .video iframe {
     height: 440px;
   }
+  .years {
+    height: 1530px;
+  }
+  .years__cut {
+    height: 840px;
+    margin-top: 550px;
+  }
+  .years__about {
+    padding: 10px 60px 30px 60px;
+  }
+  .years__buklet {
+    width: 300px;
+    top: 500px;
+  }
+  .years__descr {
+    font-size: 40px;
+  }
+  .years__descr span {
+    font-size: 80px;
+  }
+  .years__descr2 {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .years__descrm {
+    font-size: 40px;
+    line-height: 20px;
+  }
+  .years__descr_box2 {
+    margin-top: 70px;
+    margin-left: 315px;
+  }
+  .years__about2 {
+    top: 1000px;
+    padding: 30px 60px 30px 60px;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -2116,6 +2263,35 @@ body {
     margin: 50px auto 50px;
     height: 330px;
   }
+  .years {
+    margin-bottom: -10px;
+  }
+  .years__about {
+    font-size: 14px;
+  }
+  .years__buklet {
+    width: 265px;
+  }
+  .years__descr {
+    font-size: 30px;
+  }
+  .years__descr span {
+    font-size: 60px;
+  }
+  .years__descrm {
+    font-size: 30px;
+  }
+  .years__descr_box {
+    margin-top: 340px;
+    margin-right: 10px;
+  }
+  .years__descr_box2 {
+    margin-top: 150px;
+    margin-left: 80px;
+  }
+  .years__about2 {
+    font-size: 14px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -2335,5 +2511,32 @@ body {
   .video iframe {
     margin: 25px auto 20px;
     height: 240px;
+  }
+  .years {
+    height: 1880px;
+  }
+  .years__cut {
+    height: 890px;
+  }
+  .years__about {
+    font-size: 13px;
+    padding: 10px;
+  }
+  .years__buklet {
+    width: 220px;
+    top: 590px;
+  }
+  .years__descr_box {
+    margin-top: 520px;
+  }
+  .years__descr_box2 {
+    padding: 0 10px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .years__about2 {
+    top: 1240px;
+    font-size: 13px;
+    padding: 10px;
   }
 }
