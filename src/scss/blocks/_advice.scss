@@ -1,0 +1,56 @@
+.advice {
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 10px 0 10px;
+    &__title {
+        font-family: EBGaramond;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 45px;
+        text-align: center;
+        color: $mainFonts;
+    }
+    &__accord {
+        margin-top: 40px;
+        &_title_box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        &_svg {
+            fill: $mainFonts;
+            width: 19px;
+            height: 10px;
+            transition: 0.5s transform;
+            // transform: rotate(180deg);
+        }
+        &_svg_active {
+            transform: rotate(-180deg);
+        }
+        &_title {
+            font-family: EBGaramond;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 27px;
+            //text-align: center;
+            color: $mainFonts;
+            
+        }
+        &_descr {
+            max-height: 0;
+            margin-left: 20px;
+            overflow: hidden;
+            margin-top: 40px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FFFFFF;
+            transition: 0.5s all;
+        }
+        .accord_active {
+            max-height: 600px;
+        }
+    }
+    
+}

@@ -73,6 +73,21 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    
+
+    //аккордион на странице about
+
+    const accordBtn = document.querySelectorAll('.advice__accord_title_box');
+
+    accordBtn.forEach(item => {
+        item.addEventListener('click', () => {
+            item.nextElementSibling.classList.toggle('accord_active');
+            item.firstElementChild.nextElementSibling.classList.toggle('advice__accord_svg_active');
+        })
+    });
+
+    //маска ввода телефона
+    $('.callback__input').inputmask({'mask': '+7 (999) 999-99-99'});
     //слайдер на странице rem
     $('.guarantee__slider_box').slick({
         dots: true,
@@ -91,5 +106,5 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
             }
         ],
-      });
+    });
 });
