@@ -14,7 +14,7 @@
     <header class="header">
     <div class="container">
         <div class="header__main">
-            <a href="#" class="header__logo_title">
+            <a href="index.html" class="header__logo_title">
                 <img src="img/Logo_big.png" alt="logo" class=header__logo_small>
                 <div class="header__title">DELUXE HOUSE <br>
                     <span>design studio</span></div>
@@ -30,12 +30,12 @@
                         </div>
                         <ul class="header__portfolio" id="portfolio_menu">
                             <li><a href="livingspace.html" class="header__menu_link">Жилые помещения</a></li>
-                            <li><a href="#" class="header__menu_link">Комерческие помещения</a></li>
+                            <li><a href="commercialspace.html" class="header__menu_link">Комерческие помещения</a></li>
                         </ul>
                     </li>
                     <li class="header__menu_item"><a href="about.html" class="header__menu_link">О нас</a></li>
-                    <li class="header__menu_item"><a href="#" class="header__menu_link">Статьи</a></li>
-                    <li class="header__menu_item"><a href="#" class="header__menu_link">Контакты</a></li>
+                    <li class="header__menu_item"><a href="articles.html" class="header__menu_link">Статьи</a></li>
+                    <li class="header__menu_item"><a href="contact.html" class="header__menu_link">Контакты</a></li>
                 </ul>
             </nav>
             <div class="header__phone_box">
@@ -97,7 +97,7 @@
                             - Уборка помещения
                         </div>
                     </div>    
-                    <button class="rate__content_btn">Заказать тариф</button>
+                    <button data-modal class="rate__content_btn">Заказать тариф</button>
                 </div>
                 <div class="rate__content_item">
                     <div>
@@ -115,7 +115,7 @@
                             -Установка и монтаж мелких деталей (ключки, зеркала, ограничители  открывания дверей и т.д.)
                         </div>
                     </div>    
-                    <button class="rate__content_btn">Заказать тариф</button>
+                    <button data-modal class="rate__content_btn">Заказать тариф</button>
                 </div>
                 <div class="rate__content_item">
                     <div>
@@ -132,7 +132,7 @@
                             - Клининг.<br>
                         </div>
                     </div>    
-                    <button class="rate__content_btn">Заказать тариф</button>
+                    <button data-modal class="rate__content_btn">Заказать тариф</button>
                 </div>
                 <div class="rate__content_item">
                     <div>
@@ -148,7 +148,7 @@
                             - Технический инженерный надзор.<br>
                         </div>
                     </div>    
-                    <button class="rate__content_btn">Заказать тариф</button>
+                    <button data-modal class="rate__content_btn">Заказать тариф</button>
                 </div>
             </div>
         </div>
@@ -173,7 +173,22 @@
         </div>
     </section>
 
-   
+    <div class="modal">
+    <div class="modal__dialog">
+        <div class="modal__content">
+                <svg class="modal__close" data-close>
+                    <use data-close xlink:href="img/icons/icons.svg#circle-xmark"></use>
+                </svg>
+                <div class="modal__title">Перезвоните мне</div>
+                <div class="modal__subtitle">Наш менеджер перезвонит вам в течении 10 минут</div>
+                <form action="#" class="callback__form modal__mod_form">
+                    <input required name="phone" type="tel" data-phone class="callback__input modal__mod_input" placeholder="+7 (___) ___ - __ - __">
+                    <button class="callback__btn">Отправить запрос</button>
+                </form>
+        </div>
+    </div>
+</div>
+
     <footer class="footer">
     <div class="container">
         <div class="footer__box">
@@ -226,7 +241,7 @@
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <!-- <script src="files/slick/slick.min.js"></script> -->
-    <!-- <script src="/js/jquery.inputmask.js"></script> -->
+    <script src="files/jquery.inputmask.js"></script>
     <script src="js/script.min.js"></script>
 </body>
 </html>

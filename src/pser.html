@@ -55,7 +55,7 @@
                             - Уборка помещения
                         </div>
                     </div>    
-                    <button class="rate__content_btn">Заказать тариф</button>
+                    <button data-modal class="rate__content_btn">Заказать тариф</button>
                 </div>
                 <div class="rate__content_item">
                     <div>
@@ -73,7 +73,7 @@
                             -Установка и монтаж мелких деталей (ключки, зеркала, ограничители  открывания дверей и т.д.)
                         </div>
                     </div>    
-                    <button class="rate__content_btn">Заказать тариф</button>
+                    <button data-modal class="rate__content_btn">Заказать тариф</button>
                 </div>
                 <div class="rate__content_item">
                     <div>
@@ -90,7 +90,7 @@
                             - Клининг.<br>
                         </div>
                     </div>    
-                    <button class="rate__content_btn">Заказать тариф</button>
+                    <button data-modal class="rate__content_btn">Заказать тариф</button>
                 </div>
                 <div class="rate__content_item">
                     <div>
@@ -106,7 +106,7 @@
                             - Технический инженерный надзор.<br>
                         </div>
                     </div>    
-                    <button class="rate__content_btn">Заказать тариф</button>
+                    <button data-modal class="rate__content_btn">Заказать тариф</button>
                 </div>
             </div>
         </div>
@@ -131,12 +131,13 @@
         </div>
     </section>
 
-   
+    @@include('html/modal.html',{})
+
     @@include('html/footer.html',{})
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <!-- <script src="files/slick/slick.min.js"></script> -->
-    <!-- <script src="/js/jquery.inputmask.js"></script> -->
+    <script src="files/jquery.inputmask.js"></script>
     <script src="js/script.min.js"></script>
 </body>
 </html>

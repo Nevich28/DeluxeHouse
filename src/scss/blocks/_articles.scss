@@ -1,0 +1,58 @@
+.articles {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 90px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_item {
+            width: 370px;
+            margin-bottom: 60px;
+        }
+        &_img {
+            border-radius: 5px;
+            width: 100%;
+            object-fit: cover;
+        }
+        &_title {
+            margin-top: 35px;
+            font-family: EBGaramond;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+        &_descr {
+            margin-top: 18px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+        &_devider_box {
+            margin-top: 25px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_devider {
+            height: 1px;
+            width: 80%;
+            background-color: $mainFonts;
+        }
+        &_link {
+        font-family: EBGaramond;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line: underline;      
+        color: $mainFonts;
+        &:hover {
+            color: $mainFonts;
+        }
+        }
+    }
+
+}

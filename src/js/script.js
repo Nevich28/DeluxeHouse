@@ -86,6 +86,126 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     });
 
+
+    //открытие модалок
+    function closeModal(modalSelector) { // закрытие окна
+        const modal = document.querySelector(modalSelector);
+        modal.classList.add('hide');
+        modal.classList.remove('show');
+        document.body.style.overflow = ''; 
+    }
+
+    function openModal(modalSelector) { // открытие окна
+        const modal = document.querySelector(modalSelector);	
+        modal.classList.add('show');
+        modal.classList.remove('hide');
+        document.body.style.overflow = 'hidden';
+    }	
+
+    function modal(triggerSelector, modalSelector) {
+        //triggerSelector - тригер для открытия модального окна
+        //modalSelector - селектор самого модального окна
+        // модальное окно
+        const modalTrigger = document.querySelectorAll(triggerSelector), // переменные
+            modal = document.querySelector(modalSelector);        
+
+        modalTrigger.forEach(btn => { //запуск по нажатию на одну из кнопок
+            btn.addEventListener('click', () => {
+                openModal(modalSelector);
+            });
+        });	
+
+        modal.addEventListener('click', (event) => { //закрытие при нажатии вне окна
+            if (event.target === modal || event.target.getAttribute('data-close') == '') {
+                closeModal(modalSelector); 
+            }
+        });
+
+        document.addEventListener('keydown', (e) => { //закрытие эскейпом
+            if (e.code === 'Escape' && modal.classList.contains('show')) {
+                closeModal(modalSelector);
+            }
+        });	
+    };
+    modal('[data-modal]', '.modal');
+
+    // работа с кнопками подтверждения в формах
+    function forms(formSelector) {
+        // Формы
+        const forms = document.querySelectorAll(formSelector);//переменная для самой формы
+
+        const message = { //список сообщений для статусов загрузки
+            //loading: 'img/form/spinner.svg',
+            success: 'Thank you.   We will contact you soon',
+            failure: 'Что-то пошло не так...'
+        };
+
+        forms.forEach(item => { //цикл для двух видов одной и той же формы
+            bindPostData(item);
+        }); 
+
+
+
+        function bindPostData(form) { //при нажатии подтверждения в форме
+            form.addEventListener('submit', (e) => {
+                e.preventDefault(); //отключаем стандартное поведение формы
+
+                const statusMessage = document.createElement('img'); //добавка сообщения после выполнения отправки формы
+                //statusMessage.src = message.loading;
+                statusMessage.style.cssText = `
+                    display: block;
+                    margin: 0 auto;
+                    `;
+                form.insertAdjacentElement('afterend', statusMessage); 
+
+                showThanksModal(message.success); // заглушка, если не отправлять данные
+                //const formData = new FormData(form); //получение данных из формы
+
+                //const json = JSON.stringify(Object.fromEntries(formData.entries())); //сборка json из полученных данных
+
+                // postData('http://localhost:3000/requests', json) //отправка самого запроса с формы обратной связи
+                // 	.then(data => { //сообщение о том что все нормально
+                // 		console.log(data);
+                // 		showThanksModal(message.success);
+                // 		statusMessage.remove();
+                // 	}).catch(() => { //если произошла ошибка
+                // 		showThanksModal(message.failure);
+                // 	}).finally(() => {  // очистка формы ввода в любом случае
+                // 		form.reset();
+                // 	});
+            });
+        }
+        function showThanksModal(message) { //создание модалки после отправки запроса
+            const prevModalDialog = document.querySelector('.modal__dialog');
+
+            prevModalDialog.classList.add('hide');
+            openModal('.modal');
+
+            const thanksModal = document.createElement('div');
+            thanksModal.classList.add('modal__dialog');
+            thanksModal.innerHTML = `
+                <div class="modal__content">
+                    <svg class="modal__close" data-close>
+                        <use data-close xlink:href="img/icons/icons.svg#circle-xmark"></use>
+                    </svg>
+                    <div class="modal__title mod_title">Спасибо что оставили заявку!</div>
+                    <div class="modal__subtitle mod_sutitle">А пока вы ждете звонок, можете просмотреть наши <a href="livingspace.html">лучшие проекты!</a></div>
+                    <div class="modal__signature">Мы создаем прекрасное!</div>
+                </div>
+            `;
+
+            document.querySelector('.modal').append(thanksModal); //возврат на место нормальной модалки
+            setTimeout(() => {
+                thanksModal.remove();
+                prevModalDialog.classList.add('show');
+                prevModalDialog.classList.remove('hide');
+                closeModal('.modal');
+            }, 4000);
+        }
+    }
+
+    forms('form'); // вызов самой функции
+
     //маска ввода телефона
     $('.callback__input').inputmask({'mask': '+7 (999) 999-99-99'});
     //слайдер на странице rem

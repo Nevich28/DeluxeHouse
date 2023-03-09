@@ -1,0 +1,61 @@
+.coordinates {
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 10px 120px 10px;
+
+    &__title {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+    &__descr {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: $mainFonts;
+    }
+    &__content {
+        margin-top: 115px;
+        display: flex;
+        justify-content: space-between;
+        &_item {
+            width: 48%;
+        }
+        &_title {
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 28px;
+            color: #FFFFFF;
+        }
+        &_signature {
+            margin-top: 80px;
+            font-family: 'Segoe Script';
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 36px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+    }
+    &__social {
+        margin-top: 50px;
+        margin-bottom: 5px;
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            svg {
+                width: 30px;
+                height: 30px;
+                fill: #FFFFFF;
+                transition: 0.2s scale;
+                &:hover {
+                    scale: 1.2;
+                }
+            }
+        }
+    }
+}

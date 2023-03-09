@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html', {
+        "title":"Контакты",
+        "preload":"<link rel='preload' as='image' href='@img/contact/piano.jpg'>"
+                    
+                    
+    })
+<body>
+    @@include('html/header.html',{"class":"header__logo_small"})
+
+    <div class="subheader">
+        <div class="subheader__img_cont">
+            <img src="@img/contact/piano.jpg" alt="piano" class="subheader__img">
+            <div class="subheader__box">
+                <div class="subheader__subtitle">Если вы хотите узнать о ценах, об услугах, получить ответы на другие вопросы или договориться о встрече — заполните контактную форму или выберите удобный для вас способ связи.</div>
+                <div class="subheader__bread_crumbs">
+                    <a href="index.html">Главная</a> <div> / </div> <a class="color" href="#">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="coordinates">
+        <div class="container">
+            <h2 class="coordinates__title">Для партнеров</h2>
+            <div class="coordinates__descr">Принимаем заявки на сотрудничество с мебельными салонами, магазинами и цехами, с салонами отделочных материалов, приборов освещения, и любых других предметов интерьера.
+                <br><br>
+                Для связи с менеджером, пишите на WhatsApp +7 700 3010 340
+            </div>
+            <div class="coordinates__content">
+                <div class="coordinates__content_item">
+                    <div class="coordinates__content_title">Мы в соцсетях</div>
+                    <div class="coordinates__social">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#pinterest"></use>
+                            </svg>
+                        </a>    
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#facebook"></use>
+                            </svg>
+                        </a>    
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#vk"></use>
+                            </svg>
+                        </a>    
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="coordinates__content_item">
+                    <div class="coordinates__content_title">Позвоните нам и получите ответы на все интересующие Вас вопросы!</div>
+                    <div class="coordinates__content_signature">С глубоким уважением, Ваша студия интерьерного дизайна DELUXE HOUSE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('html/footer.html',{})
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="files/slick/slick.min.js"></script>
+    <script src="files/jquery.inputmask.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>
