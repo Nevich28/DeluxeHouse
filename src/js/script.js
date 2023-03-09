@@ -80,9 +80,22 @@ window.addEventListener('DOMContentLoaded', () => {
     const accordBtn = document.querySelectorAll('.advice__accord_title_box');
 
     accordBtn.forEach(item => {
-        item.addEventListener('click', () => {
-            item.nextElementSibling.classList.toggle('accord_active');
-            item.firstElementChild.nextElementSibling.classList.toggle('advice__accord_svg_active');
+        item.addEventListener('click', (e) => {
+                let active = true;
+            if (item.nextElementSibling.classList.contains('accord_active')) {
+                active = true;
+            } else {
+                active = false;
+            }
+            console.log(active);
+            accordBtn.forEach(item => {
+                item.nextElementSibling.classList.remove('accord_active');
+                item.firstElementChild.nextElementSibling.classList.remove('advice__accord_svg_active');
+            });
+            if (!active) {
+                item.nextElementSibling.classList.add('accord_active');
+                item.firstElementChild.nextElementSibling.classList.add('advice__accord_svg_active');
+            }
         })
     });
 
@@ -173,6 +186,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 // 	}).finally(() => {  // очистка формы ввода в любом случае
                 // 		form.reset();
                 // 	});
+            form.reset();    
             });
         }
         function showThanksModal(message) { //создание модалки после отправки запроса
